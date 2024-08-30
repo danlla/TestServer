@@ -36,6 +36,8 @@ public class NumberController(DataBaseContext context) : ControllerBase
 
         context.SaveChanges();
 
+        Counters.TestCounter.Inc();
+
         return Ok();
     }
 }
