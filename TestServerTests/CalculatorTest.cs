@@ -10,9 +10,9 @@ public class CalculatorTest
     {
         var numbers = new List<Number>
         {
-            new Number{ Id = 0, Value = 0 },
-            new Number{ Id = 0, Value = 1 },
-            new Number{ Id = 0, Value = 2 }
+            new() { Id = 0, Value = 0 },
+            new() { Id = 0, Value = 1 },
+            new() { Id = 0, Value = 2 }
         };
 
         var expectedSum = 3;
@@ -27,9 +27,9 @@ public class CalculatorTest
     {
         var numbers = new List<Number>
         {
-            new Number{ Id = 0, Value = -1 },
-            new Number{ Id = 0, Value = -2 },
-            new Number{ Id = 0, Value = -3 }
+            new() { Id = 0, Value = -1 },
+            new() { Id = 0, Value = -2 },
+            new() { Id = 0, Value = -3 }
         };
 
         var expectedSum = -6;
